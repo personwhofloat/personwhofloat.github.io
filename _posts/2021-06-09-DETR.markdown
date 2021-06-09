@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "DETR"
-date:   2021-06-08 16:16:49 +0700
+date:   2021-06-09 16:16:49 +0700
 categories: jekyll update
 ---
 # Detection Transformer (DETR)
