@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "DETR"
-date:   2021-06-09 16:16:49 +0700
-categories: [blogging]
+date:   2021-02-19 16:16:49 +0700
+categories: object-detection
 ---
 # Detection Transformer (DETR)
 
