@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Refactor</title>
+</head>
+<body>
+    <div class="game">
+        <!--Game title-->
+        <div class="title">ViWordle</div>
+        <!--Game board-->
+        <div class="board">
+            <div class="board-guess">
+                <div class="board-guess__box" id="1"></div>
+                <div class="board-guess__box" id="2"></div>
+                <div class="board-guess__box" id="3"></div>
+                <div class="board-guess__box" id="4"></div>
+                <div class="board-guess__box" id="5"></div>
+                <div class="board-guess__box" id="6"></div>
+            </div>
+            <div class="board-guess">
+                <div class="board-guess__box" id="7"></div>
+                <div class="board-guess__box" id="8"></div>
+                <div class="board-guess__box" id="9"></div>
+                <div class="board-guess__box" id="10"></div>
+                <div class="board-guess__box" id="11"></div>
+                <div class="board-guess__box" id="12"></div>
+            </div>
+            <div class="board-guess">
+                <div class="board-guess__box" id="13"></div>
+                <div class="board-guess__box" id="14"></div>
+                <div class="board-guess__box" id="15"></div>
+                <div class="board-guess__box" id="16"></div>
+                <div class="board-guess__box" id="17"></div>
+                <div class="board-guess__box" id="18"></div>
+            </div>
+            <div class="board-guess">
+                <div class="board-guess__box" id="19"></div>
+                <div class="board-guess__box" id="20"></div>
+                <div class="board-guess__box" id="21"></div>
+                <div class="board-guess__box" id="22"></div>
+                <div class="board-guess__box" id="23"></div>
+                <div class="board-guess__box" id="24"></div>
+            </div>
+            <div class="board-guess">
+                <div class="board-guess__box" id="25"></div>
+                <div class="board-guess__box" id="26"></div>
+                <div class="board-guess__box" id="27"></div>
+                <div class="board-guess__box" id="28"></div>
+                <div class="board-guess__box" id="29"></div>
+                <div class="board-guess__box" id="30"></div>
+            </div>
+            <div class="board-guess">
+                <div class="board-guess__box" id="31"></div>
+                <div class="board-guess__box" id="32"></div>
+                <div class="board-guess__box" id="33"></div>
+                <div class="board-guess__box" id="34"></div>
+                <div class="board-guess__box" id="35"></div>
+                <div class="board-guess__box" id="36"></div>
+            </div>
+        </div>
+        <!--Game keyboard check-->
+        <div class="keyboard">
+            <div class="keyboard-row">
+                <p class="keyboard-row__letter" id="ă"></p>
+                <p class="keyboard-row__letter" id="â"></p>
+                <p class="keyboard-row__letter" id="ê"></p>
+                <p class="keyboard-row__letter" id="ô"></p>
+                <p class="keyboard-row__letter">`</p>
+                <p class="keyboard-row__letter"> ̉</p>
+                <p class="keyboard-row__letter">~</p>
+                <p class="keyboard-row__letter"> ́</p>
+                <p class="keyboard-row__letter">.</p>
+                <p class="keyboard-row__letter" id="đ"></p>
+            </div>
+            <div class="keyboard-row">
+                <p class="keyboard-row__letter" id="q"></p>
+                <p class="keyboard-row__letter" id="w"></p>
+                <p class="keyboard-row__letter" id="e"></p>
+                <p class="keyboard-row__letter" id="r"></p>
+                <p class="keyboard-row__letter" id="t"></p>
+                <p class="keyboard-row__letter" id="y"></p>
+                <p class="keyboard-row__letter" id="u"></p>
+                <p class="keyboard-row__letter" id="i"></p>
+                <p class="keyboard-row__letter" id="o"></p>
+                <p class="keyboard-row__letter" id="p"></p>
+                
+                
+            </div>
+            <div class="keyboard-row">
+                <!-- <p class="keyboard-row__letter"></p> -->
+                <p class="keyboard-row__letter" id="a"></p>
+                <p class="keyboard-row__letter" id="s"></p>
+                <p class="keyboard-row__letter" id="d"></p>
+                <p class="keyboard-row__letter" id="f"></p>
+                <p class="keyboard-row__letter" id="g"></p>
+                <p class="keyboard-row__letter" id="h"></p>
+                <p class="keyboard-row__letter" id="j"></p>
+                <p class="keyboard-row__letter" id="k"></p>
+                <p class="keyboard-row__letter" id="l"></p>
+                <p class="keyboard-row__letter" id="ư"></p>
+                <!-- <p class="keyboard-row__letter"></p> -->
+            </div>
+            <div class="keyboard-row">
+                <p class="keyboard-row__letter" id="enter" style="font-size:12px;"></p>
+                <p class="keyboard-row__letter" id="z"></p>
+                <p class="keyboard-row__letter" id="x"></p>
+                <p class="keyboard-row__letter" id="c"></p>
+                <p class="keyboard-row__letter" id="v"></p>
+                <p class="keyboard-row__letter" id="b"></p>
+                <p class="keyboard-row__letter" id="n"></p>
+                <p class="keyboard-row__letter" id="m"></p>
+                <p class="keyboard-row__letter" id="ơ"></p>
+                <p class="keyboard-row__letter">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 24 24" width="24">
+                        <path fill="#fff" d="M22 3H7c-.69 0-1.23.35-1.59.88L0 12l5.41 8.11c.36.53.9.89 1.59.89h15c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H7.07L2.4 12l4.66-7H22v14zm-11.59-2L14 13.41 17.59 17 19 15.59 15.41 12 19 8.41 17.59 7 14 10.59 10.41 7 9 8.41 12.59 12 9 15.59z"></path>
+                      </svg>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script> 
+</body>
+</html>
